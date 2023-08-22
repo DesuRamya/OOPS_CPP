@@ -1,0 +1,30 @@
+//22A91A05H3
+#include<iostream>
+using namespace std;
+class patient{
+private:
+		static string hospital;
+		string name,place;
+		int age;
+public:
+		patient(string name,string place,int age)
+		{
+			this->name=name;
+			this->place=place;
+			this->age=age;
+		}
+		void display()
+		{
+			cout<<name<<" "<<place<<" "<<age<<" "<<hospital<<endl;
+		}
+};
+string patient::hospital="Global_Hospitals";
+int main()
+{
+	patient p1("ravi","tuni",43);
+	p1.display();
+}
+/*encapsulation:wrapping data members and data functions
+uses:improves code reusability
+					-Data hiding
+*/
