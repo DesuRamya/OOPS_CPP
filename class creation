@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class patient{
+	public:
+		static string hospital;
+		string name,place;
+		int age;
+		patient(string name,string place,int age)
+		{
+			this->name=name;
+			this->place=place;
+			this->age=age;
+		}
+		void display()
+		{
+			cout<<name<<" "<<place<<" "<<age<<" "<<hospital;
+		}
+};
+string patient::hospital="Global_Hospitals";
+int main()
+{
+	patient p1("ravi","tuni",43);
+	p1.display();
+	}
